@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<link rel='stylesheet' href='css/styles.css'>
+		</head>
+		<body>
+			<h1>Secure Password Generator</h1>
+				<div>
+					<label for='passLength'>Password Length:</label>
+					<select id='passLength'></select>
+				</div>
+				<div>
+					<label for=''>Include Symbols:</label>
+					<input type='checkbox' name='symbols' id='symbols'> ( e.g. !@#$ )</div>
+				<div>
+					<label for=''>Include Lowercase Letters:</label>
+					<input type='checkbox' name='lowercase' id='lowercase'> ( e.g. abcdefg )
+				</div>
+				<div>
+					<label for=''>Include Uppercase Letters:</label>
+					<input type='checkbox' name='uppercase' id='uppercase'> ( e.g. ABCDEFG)
+				</div>
+				<div>
+					<label for=''>Include Numbers:</label>
+					<input type='checkbox' name='numbers' id='numbers'> ( e.g. 1234567890 )
+				</div>
+<!-- 				<div>
+					<label for=''>Exclude Similar Characters:</label>
+					<input type='checkbox' name='simChar' id='simChar'> ( e.g. i, l, o, 1, 0, I )
+				</div> -->
+<!-- 				<div>
+					<label for=''>Generate On The Client:</label>
+					<input type='checkbox' name='clientGen' id='clientGen'> ( create the password locally, it will NOT be sent across the Internet )
+				</div> -->
+<!-- 				<div>
+					<label for=''>Save My Preference:</label>
+					<input type='checkbox' name='savePref' id='savePref'> ( save the above settings in client cookies )
+				</div> -->
+				<div id='genBtn'>
+					<button id='passGenBtn'>Generate Secure Password</button>
+				</div>
+				
+				<div>
+					<label for='output'>Your new password: </label>
+					<input type='text' name='output' id='output' placeholder='Your secure password will appear here' disabled>
+				</div>
+<!-- 				<div>
+					<label for='pronunciation'>Phonetic Pronunciation: v</label>
+					<p id='pronunciation'></p>
+				</div> -->
+			<script src='http://code.jquery.com/jquery-1.10.2.js' type='text/javascript'></script>
+			<script src='http://code.angularjs.org/1.1.5/angular.js' type='text/javascript'></script>
+			<script src='js/app.js'></script>
+			<script src='js/RandPassGenController.js'></script>
+			<script src='js/services.js'></script>
+		</body>
+	</html>
