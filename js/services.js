@@ -64,7 +64,6 @@ $(document).ready(function(){
 		} else if (!$(this).is(':checked') && $(this).val() === 'nums') {
 			randArray.splice(randArray.indexOf(nums), 1);
 		} 
-		console.log(randArray)
 	});	
 
 
