@@ -5,24 +5,26 @@
 		</head>
 		<body>
 			<h1>Secure Password Generator</h1>
-				<div>
-					<p>Password Length:</p>
-					<select id='passLength'></select>
-				</div>
-				<div>
-					<p>Include Symbols:</p>
-					<label><input type='checkbox' value='special' id='symbols' /> ( e.g. !@#$ )</label></div>
-				<div>
-					<p>Include Lowercase Letters:</p>
-					<label><input type='checkbox' value='lowercase' id='lowerCase' /> ( e.g. abcdefg )</label>
-				</div>
-				<div>
-					<p>Include Uppercase Letters:</p>
-					<label><input type='checkbox' value='uppercase' id='upperCase' /> ( e.g. ABCDEFG)</label>
-				</div>
-				<div>
-					<p>Include Numbers:</p>
-					<label><input type='checkbox' value='nums' height-"4" /> ( e.g. 1234567890 )</label>
+				<div id="password-generator-inputs">
+					<div>
+						<p>Password Length:</p>
+						<select id='passLength'></select>
+					</div>
+					<div>
+						<p>Include Symbols:</p>
+						<label><input type='checkbox' value='special' id='symbols' /> ( e.g. !@#$ )</label></div>
+					<div>
+						<p>Include Lowercase Letters:</p>
+						<label><input type='checkbox' value='lowercase' id='lowerCase' /> ( e.g. abcdefg )</label>
+					</div>
+					<div>
+						<p>Include Uppercase Letters:</p>
+						<label><input type='checkbox' value='uppercase' id='upperCase' /> ( e.g. ABCDEFG)</label>
+					</div>
+					<div>
+						<p>Include Numbers:</p>
+						<label><input type='checkbox' value='nums' height-"4" /> ( e.g. 1234567890 )</label>
+					</div>
 				</div>
 				<div id='genBtn'>
 					<button id='passGenBtn'>Generate Secure Password</button>

@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-size: 16px;
-	min-width: 575px;
+	min-width: 805px;
 }
 ol, ul {
 	list-style: none;
@@ -55,7 +55,7 @@ body {
 	font-size: 1.2em;
 	line-height: 1.5;
 	background-color: #333;
-	color: #ccc;
+	color: #eee;
 }
 h1 {
 	font-size: 2em;
@@ -80,16 +80,18 @@ button {
 	width: 298px;
 	height: 50px;
 	font-family: Arial,Helvetica,sans-serif;
-	font-size: 0.9em;
-	background-color: #94FFFF;
+	font-size: 1em;
+	background-color: #444;
+	color: #eee;
 	border-radius: 10px;
-	border: 3px solid #58E8E8;
+	border: 3px solid #eee;
+	margin-bottom: 0.4em;
 }
 button:hover {
-	background-color: #94FFFF;
+	background-color: #666;
 }
 button:active {
-	background-color: #58E8E8;
+	background-color: #444;
 	color: #fff;
 }
 button:focus {
@@ -99,10 +101,17 @@ button:focus {
 	text-align: center;
 	padding: 10px;
 }
+#password-generator-inputs {
+	font-size: 1.4em;
+}
 textarea#output {
 	width: 500px;
-	height: 95px;
-	font-size: 1em;
+	height: 145px;
+	font-size: 1.3em;
+	border-radius: 10px;
 	display: block;
 	margin: 0 auto;
+	border: solid 4px #eee;
+	color: #eee;
+	background-color: #333;
 }
