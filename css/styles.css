@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-size: 16px;
+	min-width: 575px;
 }
 ol, ul {
 	list-style: none;
@@ -58,36 +59,47 @@ h1 {
 	font-size: 2em;
 	text-align: center;
 }
-label {
-    width: 30%;
+p {
+    width: 50%;
     clear:left;
     text-align:right;
     padding-right:10px;
 }
-
-input, label {
+input, p {
     float:left;
+}
+input:hover, select:hover, label:hover {
+	cursor: pointer;
 }
 button {
 	text-align: center;
-	border: 0px;
 	cursor: pointer;
 	width: 298px;
-	height: 38px;
+	height: 50px;
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 0.9em;
-	color: #000000;
-	margin: 0px 0 0 0;
-	padding: 0 0 0 0;
-	border-radius: 5px;
-	border: thin solid #000;
+	background-color: #fff;
+	border-radius: 10px;
+	border: 3px solid #58E8E8;
+}
+button:hover {
+	background-color: #94FFFF;
+}
+button:active {
+	background-color: #58E8E8;
+	color: #fff;
+}
+button:focus {
+	outline: 0;
 }
 #genBtn {
 	text-align: center;
 	padding: 10px;
 }
-input#output {
+textarea#output {
 	width: 500px;
-	height: 20px;
+	height: 95px;
 	font-size: 1em;
+	display: block;
+	margin: 0 auto;
 }
