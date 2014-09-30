@@ -75,6 +75,7 @@ $(document).ready(function(){
 					$('#output').val(myPass);
 				}
 			} else {
+				$('#output').val('');
 				alert('You must select at least one character type.');
 			}
 			return randPassArray;

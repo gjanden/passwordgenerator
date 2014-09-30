@@ -87,9 +87,15 @@ button {
 	border-radius: 10px;
 	border: 3px solid #eee;
 	margin-bottom: 0.4em;
+	border-radius: 50px;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	transition: all .25s ease;	
 }
 button:hover {
-	background-color: #666;
+	background-color: #26ca28;
 }
 button:active {
 	background-color: #444;
@@ -107,7 +113,7 @@ textarea#output {
 	font-size: 1.3em;
 	border-radius: 10px;
 	display: block;
-	margin: 0 auto;
+	margin: 0em auto 2em auto;
 	border: solid 4px #eee;
 	color: #eee;
 	background-color: #333;
@@ -191,4 +197,13 @@ input[type=checkbox] {
    border-radius: 50px;
    height: 34px;
    -webkit-appearance: none;
-   }
+}
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #26ca28;
+/*	top: 9px;
+	left: 0px;*/
+}   
