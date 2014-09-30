@@ -5,22 +5,19 @@ $(document).ready(function(){
 	var highNum = 128;
 	var charNum = [];
 	var apostrophe = "'";	
-//	var characterSets = {
 	var lowerCase = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 	var upperCase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 	var special = [' ','!','@','#','$','%','^','&','*','(',')','-','_','=','+','[','{',']','}','|',';',':','"','<',',','>','.','?','/','\\',apostrophe];
 	var nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-//	};
 	var randArray = [];
+
 	var passLength = $('#passLength');
+	var genBtn = $('#passGenBtn');
 
 	var length = document.getElementById("passLength");
 		length.addEventListener('change', function(){
   		var quantity= length.options[length.selectedIndex].value;
 		},false);
-
-	var genBtn = $('#passGenBtn');
-
 
 // Pushes values into the charNum array
 	while(lowNum < highNum + 1){
@@ -66,7 +63,6 @@ $(document).ready(function(){
 		} 
 	});	
 
-
 // Loop that populates #output with random characters from random arrays
 	genBtn.on('click', function() {
 		if(randArray.length > 0){
@@ -84,6 +80,4 @@ $(document).ready(function(){
 			return randPassArray;
 			console.log(randArray);
 	});	
-//	console.log(characterSets);
 });
-

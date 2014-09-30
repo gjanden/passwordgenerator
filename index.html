@@ -6,25 +6,34 @@
 		<body>
 			<h1>Secure Password Generator</h1>
 				<div id="password-generator-inputs">
-					<div>
-						<p>Password Length:</p>
+					<div class="styled-select">
+						<p>Length:</p>
 						<select id='passLength'></select>
 					</div>
 					<div>
-						<p>Include Symbols:</p>
-						<label><input type='checkbox' value='special' id='symbols' /> ( e.g. !@#$ )</label></div>
-					<div>
-						<p>Include Lowercase Letters:</p>
-						<label><input type='checkbox' value='lowercase' id='lowerCase' /> ( e.g. abcdefg )</label>
+						<p>Lowercase:</p>
+						<div class="toggle">
+							<input type='checkbox' value='lowercase' id='lowercase' /><label for='lowercase'></label>
+						</div>
 					</div>
 					<div>
-						<p>Include Uppercase Letters:</p>
-						<label><input type='checkbox' value='uppercase' id='upperCase' /> ( e.g. ABCDEFG)</label>
+						<p>Uppercase:</p>
+						<div class="toggle">
+							<input type='checkbox' value='uppercase' id='uppercase' /><label for='uppercase'></label>
+						</div>
 					</div>
 					<div>
-						<p>Include Numbers:</p>
-						<label><input type='checkbox' value='nums' height-"4" /> ( e.g. 1234567890 )</label>
+						<p>Numbers:</p>
+						<div class="toggle">
+							<input type='checkbox' value='nums' class="toggle" id='nums'/><label for='nums'></label>
+						</div>
 					</div>
+					<div>
+						<p>Symbols:</p>
+						<div class="toggle">
+						<input type='checkbox' value='special' id='special' /><label for='special'></label>
+						</div>
+					</div>					
 				</div>
 				<div id='genBtn'>
 					<button id='passGenBtn'>Generate Secure Password</button>

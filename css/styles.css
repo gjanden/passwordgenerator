@@ -67,6 +67,7 @@ p {
     clear:left;
     text-align:right;
     padding-right:10px;
+    margin-top: 3px;
 }
 input, p {
     float:left;
@@ -81,7 +82,7 @@ button {
 	height: 50px;
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 1em;
-	background-color: #444;
+	background-color: #555;
 	color: #eee;
 	border-radius: 10px;
 	border: 3px solid #eee;
@@ -97,13 +98,6 @@ button:active {
 button:focus {
 	outline: 0;
 }
-#genBtn {
-	text-align: center;
-	padding: 10px;
-}
-#password-generator-inputs {
-	font-size: 1.4em;
-}
 textarea#output {
 	width: 500px;
 	height: 145px;
@@ -115,3 +109,84 @@ textarea#output {
 	color: #eee;
 	background-color: #333;
 }
+#genBtn {
+	text-align: center;
+	padding: 10px;
+}
+#password-generator-inputs {
+	font-size: 1.4em;
+}
+input[type=checkbox] {
+	visibility: hidden;
+}
+.toggle {
+	width: 120px;
+	height: 40px;
+	background: #eee;
+	margin: 4px 10px;
+	display: inline-block;
+	border-radius: 50px;
+	position: relative;
+}
+.toggle:before {
+	content: 'On';
+	position: absolute;
+	top: 12px;
+	left: 13px;
+	height: 2px;
+	color: #26ca28;
+	font-size: 16px;
+}
+.toggle:after {
+	content: 'Off';
+	position: absolute;
+	top: 12px;
+	left: 84px;
+	height: 2px;
+	color: #111;
+	font-size: 16px;
+}
+.toggle label {
+	display: block;
+	width: 52px;
+	height: 22px;
+	border-radius: 50px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 9px;
+	z-index: 1;
+	left: 12px;
+	background: #333;
+}
+
+/**
+ * Create the checkbox event for the label
+ */
+.toggle input[type=checkbox]:checked + label {
+	left: 60px;
+	background: #26ca28;
+}
+/*.styled-select {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+   height: 29px;
+   overflow: hidden;
+   width: 240px;
+}*/
+.styled-select select {
+   background: #eee;
+   width: 120px;
+   height: 40px;
+			margin: 15px 10px;
+			padding-left: 15px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 50px;
+   height: 34px;
+   -webkit-appearance: none;
+   }
