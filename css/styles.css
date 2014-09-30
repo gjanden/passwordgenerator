@@ -60,7 +60,7 @@ body {
 h1 {
 	font-size: 2em;
 	text-align: center;
-	margin-top: 3em;
+	margin-top: 2em;
 }
 p {
     width: 50%;
@@ -98,9 +98,12 @@ button:active {
 button:focus {
 	outline: 0;
 }
+select:focus {
+	outline: 0;
+}
 textarea#output {
 	width: 500px;
-	height: 145px;
+	height: 175px;
 	font-size: 1.3em;
 	border-radius: 10px;
 	display: block;
@@ -116,6 +119,8 @@ textarea#output {
 #password-generator-inputs {
 	font-size: 1.4em;
 }
+
+/* Checkbox Styling */
 input[type=checkbox] {
 	visibility: hidden;
 }
@@ -131,7 +136,7 @@ input[type=checkbox] {
 .toggle:before {
 	content: 'On';
 	position: absolute;
-	top: 12px;
+	top: 10px;
 	left: 13px;
 	height: 2px;
 	color: #26ca28;
@@ -140,7 +145,7 @@ input[type=checkbox] {
 .toggle:after {
 	content: 'Off';
 	position: absolute;
-	top: 12px;
+	top: 10px;
 	left: 84px;
 	height: 2px;
 	color: #111;
@@ -151,11 +156,11 @@ input[type=checkbox] {
 	width: 52px;
 	height: 22px;
 	border-radius: 50px;
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	transition: all .5s ease;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	transition: all .25s ease;
 	cursor: pointer;
 	position: absolute;
 	top: 9px;
@@ -164,24 +169,21 @@ input[type=checkbox] {
 	background: #333;
 }
 
-/**
- * Create the checkbox event for the label
- */
 .toggle input[type=checkbox]:checked + label {
 	left: 60px;
 	background: #26ca28;
 }
-/*.styled-select {
-   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
-   height: 29px;
-   overflow: hidden;
-   width: 240px;
-}*/
+
+/* Select Box Styling */
+.styled-select{
+	margin-bottom: 15px;
+}
 .styled-select select {
    background: #eee;
+   color: #26ca28;
    width: 120px;
    height: 40px;
-			margin: 15px 10px;
+			margin: 0px 10px;
 			padding-left: 15px;
    font-size: 16px;
    line-height: 1;
