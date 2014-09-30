@@ -154,7 +154,7 @@ input[type=checkbox] {
 	top: 10px;
 	left: 84px;
 	height: 2px;
-	color: #111;
+	color: red;
 	font-size: 16px;
 }
 .toggle label {
@@ -172,7 +172,7 @@ input[type=checkbox] {
 	top: 9px;
 	z-index: 1;
 	left: 12px;
-	background: #333;
+	background: #C00;
 }
 
 .toggle input[type=checkbox]:checked + label {
@@ -198,12 +198,3 @@ input[type=checkbox] {
    height: 34px;
    -webkit-appearance: none;
 }
-.arrow-down {
-	width: 0; 
-	height: 0; 
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 5px solid #26ca28;
-/*	top: 9px;
-	left: 0px;*/
-}   
